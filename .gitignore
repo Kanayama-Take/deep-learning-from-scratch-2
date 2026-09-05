@@ -1,0 +1,6 @@
+# Project-local Python virtual environment
+.venv/
+
+# Generated Python bytecode
+__pycache__/
+*.py[cod]

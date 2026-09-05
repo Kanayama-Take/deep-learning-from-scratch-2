@@ -26,7 +26,7 @@ loss_list = []
 
 
 for epoch in range(max_epoch): # range(何回まで)
-    idx = np.random.permutation(data_size) # データサイズ(300-1=299)までの値でランダム値
+    idx = np.random.permutation(data_size) # データサイズ(300-1=299)までの値でランダムに値を引き出す
     x = x[idx]
     t = t[idx]
 
