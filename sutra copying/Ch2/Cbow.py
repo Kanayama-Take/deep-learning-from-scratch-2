@@ -1,0 +1,27 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from common.layers import MatMul
+import numpy as np
+
+# sayの左右のコンテキストデータ
+c0 = np.array([[1, 0, 0, 0, 0, 0, 0]])
+c1 = np.array([[0, 0, 1, 0, 0, 0, 0]])
+
+# 重みをランダムな値に
+W_in = np.random.randn(7, 3)
+W_out = np.random.randn(3, 7)
+
+# 行列の積を計算するMatMulレイヤの生成
+in_layer0 = MatMul(W_in)
+in_layer1 = MatMul(W_in)
+out_layer = MatMul(W_out)
+
+# 順伝播
+h0 = in_layer0.forward(c0)
+h1 = in_layer1.forward(c1)
+h = 0.5 * (h0 + h1)
+s = out_layer.forward(h)
+
+print(s)
