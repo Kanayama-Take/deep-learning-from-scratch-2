@@ -60,3 +60,24 @@ $ python train_custom_loop.py
 https://github.com/oreilly-japan/deep-learning-from-scratch-2/wiki/errata
 
 本ページに掲載されていない誤植など間違いを見つけた方は、[japan@oreilly.co.jp](<mailto:japan@oreilly.co.jp>)までお知らせください。
+
+#### この個人リポジトリでのAIとの学習
+
+2026-09-25に追加した個人の学習方針です。上の書籍・著者教材の説明とは別に、このリポジトリで学習を再開する際に使います。
+
+- [AIへの指示](AGENTS.md)
+- [説明方法の正本](docs/TEACHING_GUIDE.md)
+- [現在位置と再開メモ](LEARNING_STATE.md)
+- [質問・補足説明の記録](docs/LEARNING_QUESTIONS.md)
+
+説明は「目的 → 短いコード → 各部分の意味 → 結果の確認 → 小さな練習」の順。初登場の構文・数式・AI用語や配列のshapeは、具体例で一つずつ説明します。
+
+#### 別PC・別AIで再開するには
+
+初めてのPCではこのリポジトリをcloneし、既にある場合はローカル変更を確認して最新のmasterを取り込んでください。学習用Python環境は各PCで用意します。
+
+リポジトリを開いて、AIへ次のように伝えてください。
+
+> このリポジトリのAGENTS.md、docs/TEACHING_GUIDE.md、LEARNING_STATE.mdを最初に読み、記録された説明方法で学習を再開してください。入力するファイルと編集方法を先に示し、初めての構文・数式・AI用語を一つずつ説明してください。再開場所が分からなければ、今取り組んでいるファイルを確認してください。
+
+リポジトリを直接読めないAIでは、上の3ファイルの内容を渡してください。SQL学習のリポジトリを一緒に取得する必要はありません。
